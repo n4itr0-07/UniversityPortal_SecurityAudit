@@ -1,4 +1,4 @@
-# Vulnerable University Portal - Security Audit Demo
+# **Vulnerable University Portal - Security Audit Demo**
 
 ## Overview
 
@@ -6,6 +6,10 @@ The **Vulnerable University Portal** is a deliberately insecure PHP/MySQL web ap
 It demonstrates common web vulnerabilities including SQL Injection, Cross-Site Scripting (XSS), Insecure Direct Object References (IDOR), unrestricted file uploads, CSRF, and sensitive information leakage.
 
 This project aims to help developers, security enthusiasts, and interns learn how to **identify, exploit, and remediate** typical web application security flaws through hands-on experience.
+
+---
+
+## Demo Video
 
 ---
 
@@ -38,7 +42,7 @@ Follow these steps to clone, configure, and run the application:
 
 ### 1. Clone the Repository
 
-```
+```bash
 git clone https://github.com/n4itr0-07/CodeAlpha_UniversityPortal_SecurityAudit.git
 cd CodeAlpha_UniversityPortal_SecurityAudit
 ```
@@ -47,23 +51,23 @@ cd CodeAlpha_UniversityPortal_SecurityAudit
 
 If not installed, run:
 
-#### On Ubuntu/Linux Mint/Debian:
+#### On Ubuntu/Linux Mint/Debian
 
-```
+```sh
 sudo apt update
 sudo apt install apache2 mysql-server php libapache2-mod-php php-mysqli php-curl php-xml php-mbstring php-zip
 ```
 
 ### 3. Start Apache and MySQL Services
 
-```
+```sh
 sudo systemctl start apache2
 sudo systemctl start mysql
 ```
 
 Enable to start on boot:
 
-```
+```sh
 sudo systemctl enable apache2
 sudo systemctl enable mysql
 ```
@@ -72,7 +76,7 @@ sudo systemctl enable mysql
 
 Login to MySQL shell:
 
-```
+```sh
 sudo mysql
 ```
 
@@ -106,7 +110,7 @@ INSERT INTO news(title, content) VALUES
 
 Exit MySQL prompt:
 
-```
+```sql
 exit;
 ```
 
@@ -173,21 +177,4 @@ http://localhost/university-portal/
 
 ---
 
-## Contribution & Usage Notes
-
-- This project is for educational use only and should never be deployed publicly in its current state.
-- Contributions to improve or extend this learning resource are welcome.
-- Please report issues or suggest enhancements via the repository’s Issues section.
-
----
-
-## License
-
-Distributed under the MIT License. See [LICENSE](LICENSE) for details.
-
----
-
-**Thank you for using this security demo project!  
-Happy Hacking & Learning!**
-
-
+**Happy Hacking & Learning!**
