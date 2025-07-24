@@ -39,8 +39,8 @@ Follow these steps to clone, configure, and run the application:
 ### 1. Clone the Repository
 
 ```
-git clone https://github.com/YourUsername/Vulnerable-University-Portal-Security-Audit.git
-cd Vulnerable-University-Portal-Security-Audit
+git clone https://github.com/n4itr0-07/CodeAlpha_UniversityPortal_SecurityAudit.git
+cd CodeAlpha_UniversityPortal_SecurityAudit
 ```
 
 ### 2. Install Required Services (Apache, MySQL, PHP)
@@ -78,7 +78,7 @@ sudo mysql
 
 Run the following commands to create the database and tables:
 
-```
+```sql
 CREATE DATABASE university_site;
 USE university_site;
 
@@ -114,13 +114,13 @@ exit;
 
 - Update **`config.php`** with your MySQL credentials. Example:
 
-```
-
+```php
+<?php $conn = mysqli_connect("localhost", "root", "your_mysql_password", "university_site") or die("DB Connection Failed!"); ?>
 ```
 
 - Adjust file and folder permissions to ensure the web server can read/write where necessary:
 
-```
+```sh
 sudo chown -R www-data:www-data /var/www/html/Vulnerable-University-Portal-Security-Audit
 sudo chmod -R 755 /var/www/html/Vulnerable-University-Portal-Security-Audit
 ```
@@ -129,13 +129,13 @@ sudo chmod -R 755 /var/www/html/Vulnerable-University-Portal-Security-Audit
 
 - You can copy or symbolically link this project directory to Apache’s default web root:
 
-```
+```sh
 sudo ln -s /path/to/Vulnerable-University-Portal-Security-Audit /var/www/html/university-portal
 ```
 
 - Access the app via browser at:
 
-```
+```sh
 http://localhost/university-portal/
 ```
 
