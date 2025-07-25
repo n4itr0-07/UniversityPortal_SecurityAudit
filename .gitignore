@@ -1,0 +1,36 @@
+# Ignore backup files or config files containing secrets
+#backup/config_backup.txt
+*.bak
+#*.backup
+
+# Ignore local environment or config files (if any)
+.env
+.env.* 
+
+# Ignore uploads folder contents (but keep the folder tracked)
+uploads/*
+!uploads/.gitkeep
+
+# Ignore any OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore editor or IDE files
+*.vscode/
+*.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Ignore swap or temp files
+*~
+*.swp
+*.swo
+
+# Ignore log files if any
+*.log
+
+# Ignore Composer vendor folder if PHP dependencies used (optional)
+vendor/
+
+# Ignore node_modules if any frontend dependencies used (optional)
+node_modules/

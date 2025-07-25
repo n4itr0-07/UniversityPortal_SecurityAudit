@@ -1,0 +1,14 @@
+# WARNING: This is a sensitive configuration backup file, normally protected.
+
+[database]
+host=localhost
+username=root
+password=password
+database=university_site
+
+[mail]
+smtp_server=smtp.mintuniversity.edu
+smtp_user=admin@mintuniversity.edu
+smtp_pass=secret
+
+# DO NOT SHARE THIS FILE PUBLICLY
