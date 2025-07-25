@@ -3,13 +3,19 @@
 ## Overview
 
 The **Vulnerable University Portal** is a deliberately insecure PHP/MySQL web application designed for educational purposes.  
-It demonstrates common web vulnerabilities including SQL Injection, Cross-Site Scripting (XSS), Insecure Direct Object References (IDOR), unrestricted file uploads, CSRF, and sensitive information leakage.
+It demonstrates common web vulnerabilities, including SQL Injection, Cross-Site Scripting (XSS), Insecure Direct Object References (IDOR), unrestricted file uploads, CSRF, and sensitive information leakage.
 
 This project aims to help developers, security enthusiasts, and interns learn how to **identify, exploit, and remediate** typical web application security flaws through hands-on experience.
 
 ---
 
 ## Demo Video
+
+
+
+https://github.com/user-attachments/assets/2e0a17a3-15e7-49a1-a90f-2e7bbe4c3cc8
+
+
 
 ---
 
